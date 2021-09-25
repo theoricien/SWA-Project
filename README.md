@@ -1,6 +1,8 @@
 # SWA-Project
 Projet de Sécurité des App Web <br><br>
 
+# Progression: 4/16 - 0/4
+
 > ## Usefull links:  
 > - **[XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)**
 > - **[Dom-based XSS](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)**
