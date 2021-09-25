@@ -1,3 +1,4 @@
+<?php define('__ROOT__', dirname(dirname(__FILE__))); ?>
 <html>
     <head>
         <title> XSS Rule 0 </title>
@@ -16,7 +17,7 @@
             if (isset($_GET["untrusted"]) &&
                 !empty($_GET["untrusted"]))
             {
-                echo "<script>" . $_GET["untrusted"] . "</script>";
+                echo "<p> Juste use your Web Browser Console feature.. <p>"
             }
         ?>
     </body>
