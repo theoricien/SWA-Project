@@ -17,7 +17,7 @@
             if (isset($_GET["untrusted"]) &&
                 !empty($_GET["untrusted"]))
             {
-                echo "<p> Juste use your Web Browser Console feature.. <p>"
+                echo "<p> Juste use your Web Browser Console feature.. <p>";
             }
         ?>
     </body>
