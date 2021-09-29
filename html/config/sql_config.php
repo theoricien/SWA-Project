@@ -22,7 +22,7 @@ INSERT INTO users VALUES( '', 'Benjamin')";
 $result = $conn->query($create_database);
 if (!$result) {
     printf("Table init error");
-    $result-<close();
+    $result->close();
     exit();
 }
 $result->close();
