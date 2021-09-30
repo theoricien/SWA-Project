@@ -12,4 +12,10 @@ Projet de Sécurité des App Web <br><br>
 > - **[Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)** 0/2
 >  (**[Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html#defence-in-depth)**)
 
+> ## Bonus Vulns
+> - **[PHP Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)**  0/2
+> - **[File Upload](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)** 0/2
+> - **[OS Command Injection](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html)** 0/2
+> - **[Server-Side Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html)** 0/2
+
 ![OWASP](https://camo.githubusercontent.com/96475b35e2706618a8fc7d125da55ecc4bbfc73f7963b45157fa91e264df9ecc/68747470733a2f2f6f776173702e6f72672f6173736574732f696d616765732f6c6f676f2e706e67)
