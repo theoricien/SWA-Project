@@ -1,20 +1,23 @@
 <html>
     <head>
-        <title> DOM XSS Rule 1 </title>
+        <title> DOM XSS Rule 3 </title>
     </head>
 
     <body>
-        <h1> DOM XSS Rule 1 </h1>
+        <h1> DOM XSS Rule 3 </h1>
 
         <label for="untrusted"> Text Box Reflechi </label>
         <input id="input" type="text" name="untrusted">
         <input type="submit" id="bouton" value="Submit" onclick="submit()">
 
-        <p id="text"></p>
-
         <script>
             function submit() {
-                document.getElementById('text').innerHTML = document.getElementById('input').value;
+                var x = document.createElement("a");
+                x.href="#";
+                x.setAttribute("onclick", document.getElementById('input').value);
+                var y = document.createTextNode("Click To Test");
+                x.appendChild(y);
+                document.body.appendChild(x);
             }
         </script>
     </body>
