@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> DOM XSS Rule 1 </title>
+    </head>
+
+    <body>
+        <h1> DOM XSS Rule 1 </h1>
+
+        <label for="untrusted"> Text Box Reflechi </label>
+        <input id="input" type="text" name="untrusted">
+        <input type="submit" id="bouton" value="Submit" onclick="submit()">
+
+        <p id="text"></p>
+
+        <script>
+            function submit() {
+                document.getElementById('text').innerHTML = document.getElementById('input').value;
+            }
+        </script>
+    </body>
+</html>
