@@ -5,8 +5,7 @@
     }
 
     function verify_psswd($psswd, $stored_hashed) {
-        $hashed = hash_psswd($psswd);
-        if(password_verify($hashed, $hash_psswd)) {
+        if(password_verify($psswd, $stored_hashed)) {
             echo "Password matches<br>";
         }
         else{
@@ -54,6 +53,8 @@
           echo("Password in clear: " . $psswd . "<br>");
           $hashed = hash_psswd($psswd);
           echo("Hashed: " . $hashed . "<br>"); //TODO store in DB or just a tmp file
+
+          verify_psswd($psswd, $hashed);
         }
         echo "</p>";
         ?>
