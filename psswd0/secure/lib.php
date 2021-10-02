@@ -18,7 +18,7 @@ function verify_psswd($psswd, $stored_hash) {
 
 function insert_user($username, $password) {
     $conn = connect();
-    $hashed = hash_passwd($password);
+    $hashed = hash_psswd($password);
     insert($conn, $username, $hashed);
     close_connection($conn);
 }
