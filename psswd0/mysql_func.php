@@ -17,7 +17,7 @@ function connect() {
 }
 
 function insert($conn, $username, $password) {
-  $sql = "INSERT INTO psswd0 (username, 'password')
+  $sql = "INSERT INTO psswd0 (username, passwd)
   VALUES ('$username', '$password')";
 
   if (mysqli_query($conn, $sql)) {
@@ -34,7 +34,7 @@ function select($conn, $username) {
   if (mysqli_num_rows($result) > 0) {
     // output data of each row
     $row = mysqli_fetch_assoc($result);
-    $password = $row["password"];
+    $password = $row["passwd"];
     echo "$username password is: $password <br>";
     return $password;
   } else {
