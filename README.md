@@ -1,7 +1,7 @@
 # SWA-Project
 Projet de Sécurité des App Web <br><br>
 
-# Progression: 9/16 - 3/4 (9/16 minus exploit)
+# Progression: 9/16 - 4/4 (9/16 minus exploit)
 
 > ## Usefull links:  
 > - **[XSS](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)** 12/18 (6/9)
@@ -14,7 +14,7 @@ Projet de Sécurité des App Web <br><br>
 
 > ## Bonus Vulns
 > - **[PHP Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)**  2/2 (1/1)
-> - **[File Upload](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)** 0/2 (0/1)
+> - **[File Upload](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)** 2/2 (1/1)
 > - **[OS Command Injection](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html)** 2/2 (1/1)
 > - **[Server-Side Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html)** 2/2 (1/1)
 
