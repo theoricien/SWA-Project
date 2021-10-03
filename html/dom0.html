@@ -6,9 +6,11 @@
     <body>
         <h1> DOM XSS Rule 3 </h1>
 
-        <label for="untrusted"> Text Box Reflechi </label>
-        <input id="input" type="text" name="untrusted">
-        <input type="submit" id="bouton" value="Submit" onclick="submit()">
+        <form method="get">
+            <label for="untrusted"> Text Box Reflechi </label>
+            <input id="input" type="text" name="untrusted">
+            <input type="submit" id="bouton" value="Submit" onclick="submit()">
+        </form>
 
         <script>
             function submit() {

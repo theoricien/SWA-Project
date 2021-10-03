@@ -1,9 +1,18 @@
+<?php 
+    function cssencode($str) {
+        $hex = bin2hex($_GET["untrusted"]);
+        $field = chunk_split($hex, 2, "\\");
+        $field = "\\" . substr($field, 0, -1);
+
+        return $field;
+    }
+?>
 <html>
     <head>
         <title> XSS Rule 4 </title>
         <style>
             body {
-                background-url: "<?php echo htmlspecialchars($_GET["untrusted"]); ?>";
+                background-url: "<?php echo cssencode($_GET["untrusted"]); ?>";
             }
         </style>
     </head>

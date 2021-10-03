@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title> XSS Rule 3 </title>
+        <title> XSS Rule 4 </title>
         <style>
             body {
                 background-url: "<?php echo $_GET["untrusted"]; ?>";
@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <h1> XSS Rule 3 </h1>
+        <h1> XSS Rule 4 </h1>
 
         <form method="get" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>
             <label for="untrusted"> URL Image Loader </label>
