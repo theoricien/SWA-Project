@@ -28,14 +28,14 @@ function insert($conn, $username, $password) {
 }
 
 function select($conn, $username) {
-  $sql = "SELECT 'password' FROM psswd0 WHERE username='$username'";
+  $sql = "SELECT passwd FROM psswd0 WHERE username='$username'";
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
     // output data of each row
     $row = mysqli_fetch_assoc($result);
-    $password = $row["passwd"];
-    echo "$username password is: $password <br>";
+    $password = $row["passwd"];#when no internet... not WORKING!!!!!!!!! But should be ok though
+    #echo "$username password is: $password <br>";
     return $password;
   } else {
     echo "0 results";
