@@ -4,7 +4,7 @@ require "../mysql_func.php";
 
 function verify_psswd($psswd, $stored) {
     if(strcmp($psswd, $stored) == 0) {
-        echo "<p style='color: green;'>Successfully logged in<p>";
+        echo "<p style='color: green;'>\n\tSuccessfully logged in\n<p>";
     }
     else{
         echo "<p style='color: red;'>Wrong password!<p>";
