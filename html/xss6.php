@@ -4,7 +4,7 @@
 	 <?php header("Access-Control-Allow-Origin: *");?>
 </head>
 <body>
-	<form method="get" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>
+	<form>
             <label for="untrusted"> enter ID </label>
             <input type="text" name="untrusted">
             <input type="submit" value="Submit">

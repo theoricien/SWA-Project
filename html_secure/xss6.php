@@ -15,7 +15,8 @@
     $dirty_html = $_GET["untrusted"];
     $config = HTMLPurifier_Config::createDefault();
     $purifier = new HTMLPurifier($config);
-    $clean_html = $purifier->purify($dirty_html);
+    //$clean_html = $purifier->purify($dirty_html);
+    $clean_html= htmlentities($dirty_html);
     if (isset($_GET["untrusted"]))
     {
         echo'<h1>' .$clean_html . '</h1>';
