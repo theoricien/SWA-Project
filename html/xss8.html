@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> XSS Rule 8 </title>
+        </head>
+    <body>
+        <iframe id='iframe' src='/tpl.html'></iframe>
+        <a href="/index.html">
+            <div id="home">
+                /home
+            </div>
+        </a>
+
+        <div id="cent">
+            <div id="content">
+                <h1> XSS Rule 8 </h1>
+
+        <label for="untrusted"> Text Box Reflechie </label>
+        <input id="input" type="text" name="untrusted">
+        <input type="submit" id="bouton" value="Submit" onclick="submit()">
+
+        <p id="text">Mon Text</p>
+
+        <script>
+            function submit() {
+                document.getElementById('text').innerHTML = document.getElementById('input').value;
+            }
+        </script>
+            </div>
+         </div>
+    </body>
+</html>
