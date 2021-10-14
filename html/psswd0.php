@@ -12,17 +12,18 @@
 
         <div id="cent">
             <div id="content">
+                <i>DB was hacked... stored pass = <br>
+                    "<span style='color: red;'>aJ6*p9-ngH&sUbf</span>"</i><br><br>
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <input type="password" name="pass" id="pass">
-                    <input type="submit" value="store in clear">
+                    <input type="submit" value="login">
                 </form>
                 <?php
-                /*
-					TODO: harde coded clear password (hidden field)
-					"Enter password:" --> brute-force with python and seclists and... jackpot!!
-				*/
+                    $stored = "aJ6*p9-ngH&sUbf";
                     if(isset($_POST['pass'])) {
-                        echo "In clear = " . $_POST['pass'];
+                        if($stored == $_POST['pass']) { 
+                            echo "Login success!";
+                        } else echo "Bad login...";
                     }
                 ?>
             </div>

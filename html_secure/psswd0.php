@@ -12,19 +12,22 @@
 
         <div id="cent">
             <div id="content">
+                <i>DB was hacked... stored pass = 
+                    <?php
+                        $psswd = "pLm1gy7_zK$'3xR";
+                        $hashed = password_hash($psswd, PASSWORD_DEFAULT);
+                        echo "\"<span style='color: red;'>".$hashed."</span>\"";
+                    ?>
+                </i><br><br>
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <input type="password" name="pass" id="pass">
-                    <input type="submit" value="store hash">
+                    <input type="submit" value="login">
                 </form>
                 <?php
-				/*
-					TODO: harde coded hashed password (hidden field)
-					"Enter password:" --> brute-force with python and seclists and... ha ah...
-					//actually no... simply tries to find the original value
-				*/
                     if(isset($_POST['pass'])) {
-                        $hashed = password_hash($_POST['pass'], PASSWORD_DEFAULT);
-                        if(password_verify($_POST['pass'], $hashed)) echo "Hashed = " . $hashed;
+                        if(password_verify($_POST['pass'], $hashed)) {
+                            echo "Login success!";
+                        } else echo "Bad login...";
                     }
                 ?>
             </div>
