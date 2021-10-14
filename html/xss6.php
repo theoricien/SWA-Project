@@ -14,6 +14,7 @@
 
         <div id="cent">
             <div id="content">
+                <h1>XSS Rule 6</h1>
                 <form>
                     <label for="untrusted"> enter ID </label>
                     <input type="text" name="untrusted">

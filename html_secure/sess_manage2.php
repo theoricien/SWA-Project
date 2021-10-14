@@ -1,10 +1,10 @@
 <html>
     <head>
-        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/css/s.css' media='all'/>
+        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='../css/s.css' media='all'/>
     </head>
     <body>
-        <iframe id='iframe' src='/tpl.html'></iframe>
-        <a href="/index.html">
+        <iframe id='iframe' src='../tpl.html'></iframe>
+        <a href="../index.html">
             <div id="home">
                 /home
             </div>

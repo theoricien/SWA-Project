@@ -1,6 +1,5 @@
 <?php 
-    define('__ROOT__', dirname(dirname(__FILE__)));
-    include(__ROOT__ . "/config/sql_config.php"); 
+    include("./config/sql_config.php"); 
 ?>
 
 <html>

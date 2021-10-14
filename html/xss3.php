@@ -15,7 +15,7 @@
             <div id="content">
                 <h1> XSS Rule 3 </h1>
 
-                <form method="get" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>
+                <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <label for="untrusted"> Donne une valeur a la variable x </label>
                     <input type="number" name="untrusted">
                     <input type="submit" value="Submit">
