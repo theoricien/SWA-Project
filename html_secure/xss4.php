@@ -1,9 +1,15 @@
 <?php 
     function cssencode($str) {
-        $hex = bin2hex($_GET["untrusted"]);
-        $field = chunk_split($hex, 2, "\\");
-        $field = "\\" . substr($field, 0, -1);
-        return $field;
+        $res = "";
+
+        for ($i = 0; $i < strlen($str); $i++)
+        {
+            if (preg_match('/[a-zA-Z0-9]/i', $str[$i]))
+            { $res .= $str[$i]; }
+            else 
+            { $res .= "\\" . bin2hex($str[$i]); }
+        }
+        return $res;
     }
 ?>
 <html>
