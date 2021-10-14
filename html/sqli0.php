@@ -6,10 +6,19 @@ include(__ROOT__ . "/config/sql_config.php");
 <html>
     <head>
         <title> SQL Rule 0 </title>
+        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/css/s.css' media='all'/>
     </head>
-
     <body>
-        <h1> SQL Rule 0 </h1>
+        <iframe id='iframe' src='/tpl.html'></iframe>
+        <a href="/index.html">
+            <div id="home">
+                /home
+            </div>
+        </a>
+
+        <div id="cent">
+            <div id="content">
+                <h1> SQL Rule 0 </h1>
 
         <form method="get" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>
             <label for="untrusted"> Search User by Username </label>
@@ -31,5 +40,7 @@ include(__ROOT__ . "/config/sql_config.php");
                 { echo 'This user does not exist'; }
             }
         ?>
+        </div>
+     </div>
     </body>
 </html>

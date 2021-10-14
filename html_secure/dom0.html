@@ -1,10 +1,19 @@
 <html>
     <head>
         <title> DOM XSS Rule 3 </title>
+        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/css/s.css' media='all'/>
     </head>
-
     <body>
-        <h1> DOM XSS Rule 3 </h1>
+        <iframe id='iframe' src='/tpl.html'></iframe>
+        <a href="/index.html">
+            <div id="home">
+                /home
+            </div>
+        </a>
+
+        <div id="cent">
+            <div id="content">
+                <h1> DOM XSS Rule 3 </h1>
 
         <label for="untrusted"> Text Box Reflechi </label>
         <input id="input" type="text" name="untrusted">

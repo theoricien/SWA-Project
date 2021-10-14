@@ -2,9 +2,19 @@
 <head>
     <title>XSS rule 6</title>
     <?php header("Access-Control-Allow-Origin: *");?>
-</head>
-<body>
-<div id="div1">
+    <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/css/s.css' media='all'/>
+    </head>
+    <body>
+        <iframe id='iframe' src='/tpl.html'></iframe>
+        <a href="/index.html">
+            <div id="home">
+                /home
+            </div>
+        </a>
+
+        <div id="cent">
+            <div id="content">
+                <div id="div1">
     <form method="get" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>
         <label for="untrusted"> enter ID </label>
         <input type="text" name="untrusted">

@@ -1,10 +1,19 @@
 <html>
     <head>
         <title> File Upload </title>
+        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/css/s.css' media='all'/>
     </head>
-
     <body>
-        <h1> File Upload </h1>
+        <iframe id='iframe' src='/tpl.html'></iframe>
+        <a href="/index.html">
+            <div id="home">
+                /home
+            </div>
+        </a>
+
+        <div id="cent">
+            <div id="content">
+                <h1> File Upload </h1>
         <p>We only accept PNG and JPG files</p>
 
         <form method="post" enctype="multipart/form-data" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>

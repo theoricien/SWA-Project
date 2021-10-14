@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title> /home </title>
+        <style>
+            #home {
+                position: absolute;
+                background: #fdfcfc;
+                width: 50px;
+                height: 20px;
+                top: 120px;
+                left: 5%;
+                border: 1px solid black;
+                box-shadow: 2px 2px black;
+            }
+
+            body {
+                color: #333333;
+                background: #edecec;
+                height: 100%;
+                position: relative;
+                padding: 100px 40px 0 40px !important;
+            }
+
+            * {
+                font-size: 100%;
+                font-family: Consolas, monospace ;
+            }
+
+            #left {
+                position: absolute;
+                background: #fdfcfc;
+                width: auto;
+                height: auto;
+                top: 100px;
+                left: 10%;
+                right: 60%;
+                margin-left:-100px;
+                margin-top:-50px;
+                border: 1px solid black;
+                box-shadow: 10px 10px black;
+            }
+
+            #right {
+                position: absolute;
+                background: #fdfcfc;
+                width: auto;
+                height: auto;
+                top: 100px;
+                left: 60%;
+                right: 5%;
+                margin-left:-100px;
+                margin-top:-50px;
+                border: 1px solid black;
+                box-shadow: 10px 10px black;
+            }
+
+            #content {
+                padding: 2% 5%;
+            }
+
+            table, th, td {
+                margin-top: 10px;
+                border-collapse: collapse;
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="left">
+            <div id="content">
+                <h1 style="text-align: center;"> /vuln </h1>
+                <br>
+
+                <h1>XSS</h1>
+                <ul>
+                    <li><a href="/html/xss0.php">XSS #0</a></li>
+                    <li><a href="/html/xss1.php">XSS #1</a></li>
+                    <li><a href="/html/xss2.php">XSS #2</a></li>
+                    <li><a href="/html/xss3.php">XSS #3</a></li>
+                    <li><a href="/html/xss3.1.php">XSS #3.1</a></li>
+                    <li><a href="/html/xss4.php">XSS #4</a></li>
+                    <li><a href="/html/xss5.php">XSS #5</a></li>
+                    <li><a href="/html/xss6.php">XSS #6</a></li>
+                    <li><a href="/html/xss7.php">XSS #7</a></li>
+                </ul>
+                <h1>DOM XSS</h1>
+                <ul>
+                  <li><a href="/html/dom0.html">DOM XSS</a></li>
+                </ul>
+                <h1>Session Management</h1>
+                <ul>
+                  <li><a href="/html/sess_manage0.php">Session Management #0</a></li>
+                  <li><a href="/html/sess_manage1.php">Session Management #1</a></li>
+                  <li><a href="/html/sess_manage2.php">Session Management #2</a></li>
+                </ul>
+                <h1>XXE</h1>
+                <ul>
+                  <li><a href="/html/xxe0.php">XXE</a></li>
+                </ul>
+                <h1>SQL Injection</h1>
+                <ul>
+                  <li><a href="/html/sqli0.php">SQL Injection</a></li>
+                </ul>
+                <h1>Password Storage</h1>
+                <ul>
+                  <li><a href="/html/psswd0.php">Password Storage</a></li>
+                </ul>
+
+                <h1 style="text-align: center;"> bonus </h1>
+                <h1>PHP Deserialization</h1>
+                <ul>
+                  <li><a href="/html/serz0.php">PHP Deserialization</a></li>
+                </ul>
+                <h1>File Upload</h1>
+                <ul>
+                  <li><a href="/html/fupload0.php">File Upload</a></li>
+                </ul>
+                <h1>OS Command Injection</h1>
+                <ul>
+                  <li><a href="/html/cmdi0.php">OS Command Injection</a></li>
+                </ul>
+                <h1>Server Side Request Forgery</h1>
+                <ul>
+                  <li><a href="/html/ssrf0.php">Server Side Request Forgery</a></li>
+                </ul>
+             </div>
+        </div>
+
+        <div id="right">
+            <div id="content">
+                <h1 style="text-align: center;">/secure </h1>
+                <br>
+
+                <h1>XSS</h1>
+                <ul>
+                    <li><a href="/html_secure/xss0.php">XSS #0</a></li>
+                    <li><a href="/html_secure/xss1.php">XSS #1</a></li>
+                    <li><a href="/html_secure/xss2.php">XSS #2</a></li>
+                    <li><a href="/html_secure/xss3.php">XSS #3</a></li>
+                    <li><a href="/html_secure/xss3.1.php">XSS #3.1</a></li>
+                    <li><a href="/html_secure/xss4.php">XSS #4</a></li>
+                    <li><a href="/html_secure/xss5.php">XSS #5</a></li>
+                    <li><a href="/html_secure/xss6.php">XSS #6</a></li>
+                    <li><a href="/html_secure/xss7.php">XSS #7</a></li>
+                </ul>
+                <h1>DOM XSS</h1>
+                <ul>
+                  <li><a href="/html_secure/dom0.html">DOM XSS</a></li>
+                </ul>
+                <h1>Session Management</h1>
+                <ul>
+                    <li><a href="/html_secure/sess_manage0.php">Session Management #0</a></li>
+                    <li><a href="/html_secure/sess_manage1.php">Session Management #1</a></li>
+                    <li><a href="/html_secure/sess_manage2.php">Session Management #2</a></li>
+                  </ul>
+                <h1>XXE</h1>
+                <ul>
+                  <li><a href="/html_secure/xxe0.php">XXE</a></li>
+                </ul>
+                <h1>SQL Injection</h1>
+                <ul>
+                  <li><a href="/html_secure/sqli0.php">SQL Injection</a></li>
+                </ul>
+                <h1>Password Storage</h1>
+                <ul>
+                  <li><a href="/html_secure/psswd0.php">Password Storage</a></li>
+                </ul>
+
+
+                <h1 style="text-align: center;"> bonus </h1>
+                <h1>PHP Deserialization</h1>
+                <ul>
+                  <li><a href="/html_secure/serz0.php">PHP Deserialization</a></li>
+                </ul>
+                <h1>File Upload</h1>
+                <ul>
+                  <li><a href="/html_secure/fupload0.php">File Upload</a></li>
+                </ul>
+                <h1>OS Command Injection</h1>
+                <ul>
+                  <li><a href="/html_secure/cmdi0.php">OS Command Injection</a></li>
+                </ul>
+                <h1>Server Side Request Forgery</h1>
+                <ul>
+                  <li><a href="/html_secure/ssrf0.php">Server Side Request Forgery</a></li>
+                </ul>
+             </div>
+        </div>
+
+    </body>
+</html>

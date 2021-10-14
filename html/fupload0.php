@@ -1,10 +1,19 @@
 <html>
     <head>
         <title> File Upload 0 </title>
+        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='/css/s.css' media='all'/>
     </head>
-
     <body>
-        <h1> File Upload 0 </h1>
+        <iframe id='iframe' src='/tpl.html'></iframe>
+        <a href="/index.html">
+            <div id="home">
+                /home
+            </div>
+        </a>
+
+        <div id="cent">
+            <div id="content">
+                <h1> File Upload 0 </h1>
 
         <form method="post" enctype="multipart/form-data" action=<?php echo "\"" . $_SERVER['PHP_SELF'] . "\""; ?>>
             <input type="hidden" name="MAX_FILE_SIZE" value="31457280" />
@@ -32,5 +41,7 @@
                 }
             } 
         ?>
+        </div>
+     </div>
     </body>
 </html>
