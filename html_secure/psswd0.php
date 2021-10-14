@@ -12,7 +12,7 @@
 
         <div id="cent">
             <div id="content">
-                <i>DB was hacked... stored pass = 
+                <i>Oops! DB leak... stored password = 
                     <?php
                         $psswd = "pLm1gy7_zK$'3xR";
                         $hashed = password_hash($psswd, PASSWORD_DEFAULT);

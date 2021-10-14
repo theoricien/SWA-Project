@@ -12,7 +12,7 @@
 
         <div id="cent">
             <div id="content">
-                <i>DB was hacked... stored pass = <br>
+                <i>Oops! DB leak... stored password = <br>
                     "<span style='color: red;'>aJ6*p9-ngH&sUbf</span>"</i><br><br>
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <input type="password" name="pass" id="pass">
