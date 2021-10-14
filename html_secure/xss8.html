@@ -1,10 +1,11 @@
 <html>
     <head>
         <title> XSS Rule 8 </title>
-        </head>
+        <link rel='stylesheet' property='stylesheet' id='s' type='text/css' href='../css/s.css' media='all'/>
+    </head>
     <body>
-        <iframe id='iframe' src='/tpl.html'></iframe>
-        <a href="/index.html">
+        <iframe id='iframe' src='../tpl.html'></iframe>
+        <a href="../index.html">
             <div id="home">
                 /home
             </div>
@@ -14,18 +15,18 @@
             <div id="content">
                 <h1> XSS Rule 8 </h1>
 
-        <label for="untrusted"> Text Box Reflechie </label>
-        <input id="input" type="text" name="untrusted">
-        <input type="submit" id="bouton" value="Submit" onclick="submit()">
+                <label for="untrusted"> Text Box Reflechie </label>
+                <input id="input" type="text" name="untrusted">
+                <input type="submit" id="bouton" value="Submit" onclick="submit()">
 
-        <p id="text">Mon Texte</p>
+                <p id="text">Mon Texte</p>
 
-        <script>
-            function submit() {
-                document.getElementById('text').textContent = document.getElementById('input').value;
-            }
-        </script>
+                <script>
+                    function submit() {
+                        document.getElementById('text').textContent = document.getElementById('input').value;
+                    }
+                </script>
             </div>
-         </div>
+        </div>
     </body>
 </html>
